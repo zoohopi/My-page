@@ -1,86 +1,400 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-  <header>
-
-    <div class="logo">
-      <a href="mainpage.html" class="logo">
-        <img src="./images/logo.png" alt="홈으로">
-      </a>
-    </div>
-
-    <nav class="nav">
-      <a href="resume.html">Resume</a>
-      <a href="project.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    <div class="login">
-      <img src="./images/logo.png" alt="로그인 아이콘">
-      <p>Log In</p>
-    </div>
-
-  </header>
-
-  <main class="main">
-    <h1 class="main-title">Brand Creater</h1>
-
-    <img class="main-image" src="./images/profile.jpg" alt="메인이미지">
-
-    <section class="slogan">
-      <h2 class="slogan-title">사람들이 즐거워 하는 브랜드를 만드는 사람</h2>
-      
-      <p class="slogan-text"> 
-        브랜드를 만들기 위해 능력을 갖춰가는 중입니다<br>
-        F&B 브랜드 창업으로 시작해 감도 높은 공간 디자인<br>
-        현재 IT 서비스 제작에 도전중입니다🙂
-      </p>
-  
-      <div class="slogan-button">
-      <span>Explore More</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="mainpage.html" class="logo">
+          <img src="./images/logo.png" alt="홈으로" />
+        </a>
       </div>
-      
+
+      <nav class="nav">
+        <a href="resume.html">Resume</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="login">
+        <img src="./images/box-arrow-in-right.svg" alt="로그인 아이콘" />
+        <p>Log In</p>
+      </div>
+    </header>
+
+    <!-- ===============================================
+     main
+     =================================================== -->
+    <main class="main">
+      <h1 class="main-title">Brand Creater</h1>
+
+      <img class="main-image" src="./images/profile.jpg" alt="메인이미지" />
+
+      <!-- ===============================================
+     slogan
+     =================================================== -->
+      <section class="slogan">
+        <h2 class="slogan-title">사람들이 즐거워 하는 브랜드를 만드는 사람</h2>
+
+        <p class="slogan-text">
+          브랜드를 만들기 위해 능력을 갖춰가는 중입니다<br />
+          F&B 브랜드 창업으로 시작해 감도 높은 공간 디자인<br />
+          현재 IT 서비스 제작에 도전중입니다🙂
+        </p>
+
+        <div class="slogan-button">
+          <span>Explore More</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===============================================
+     resume
+     =================================================== -->
+    <section class="resume">
+      <div class="resume-1">
+        <h1 class="resume-title">Resume</h1>
+        <div class="resume-subtitle">
+          <h2>Work<br />Experience</h2>
+        </div>
+      </div>
+
+      <div class="entries">
+        <div class="entry">
+          <span class="year"> 2035 - Present </span>
+          <div class="entry-content">
+            <h3>Editor</h3>
+            <p>I'm a paragraph. Click here to add your own text...</p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <span class="year">2035 - 2035</span>
+          <div class="entry-content">
+            <h3>Writer at Large</h3>
+            <p>I'm a paragraph. Click here to add your own text...</p>
+          </div>
+        </div>
+
+        <div class="entry">
+          <span class="year">2035 - 2035</span>
+          <div class="entry-content">
+            <h3>Intern</h3>
+            <p>I'm a paragraph. Click here to add your own text...</p>
+          </div>
+        </div>
+      </div>
     </section>
-  </main>
 
-  <section class="resume">
-    <h1 class="resume-tile">Resume</h1>
+    <!-- ===============================================
+     Ability
+     =================================================== -->
+    <section class="mybrand">
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseWidthExample1"
+        aria-expanded="false"
+        aria-controls="collapseWidthExample1"
+      >
+        1st Brand : 뜨끈한밥상
+      </button>
 
-    <div class="resume-work">
-      <h2 class="resume-">Work<br>Experience</h2>
-  </section>
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseWidthExample2"
+        aria-expanded="false"
+        aria-controls="collapseWidthExample2"
+      >
+        2nd Brand : 살롱인디앙
+      </button>
 
-  <div class="entries">
-    <div class="entry">
-      <span class="year">2035 - Present</span>
-      <div class="entry-content">
-        <h3>Editor</h3>
-        <p>I'm a paragraph. Click here to add your own text...</p>
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseWidthExample3"
+        aria-expanded="false"
+        aria-controls="collapseWidthExample3"
+      >
+        3nd Brand : ~ing
+      </button>
+    </section>
+
+    <div id="brandAccordion" class="mybrand-content">
+      <!-- 1번 -->
+      <div
+        class="collapse"
+        id="collapseWidthExample1"
+        data-bs-parent="#brandAccordion"
+      >
+        <div class="card card-body">
+          <div id="carouselBap" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/뜨끈한밥상_3.jpg"
+                  class="d-block w-100"
+                  alt="뜨끈한밥상 이미지"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/뜨끈한밥상_1.jpg"
+                  class="d-block w-100"
+                  alt="뜨끈한밥상 이미지"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/뜨끈한밥상_2.jpg"
+                  class="d-block w-100"
+                  alt="뜨끈한밥상 이미지"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselBap"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselBap"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2번 -->
+      <div
+        class="collapse"
+        id="collapseWidthExample2"
+        data-bs-parent="#brandAccordion"
+      >
+        <div class="card card-body">
+          <div
+            id="carouselSalon"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/살롱인디앙_1.jpg"
+                  class="d-block w-100"
+                  alt="살롱인디앙 이미지"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/살롱인디앙_2.jpg"
+                  class="d-block w-100"
+                  alt="살롱인디앙 이미지"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/살롱인디앙_로고.png"
+                  class="d-block w-100"
+                  alt="살롱인디앙 이미지"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselSalon"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselSalon"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3번 -->
+      <div
+        class="collapse"
+        id="collapseWidthExample3"
+        data-bs-parent="#brandAccordion"
+      >
+        <div class="card card-body">준비중</div>
       </div>
     </div>
 
-    <div class="entry">
-      <span class="year">2035 - 2035</span>
-      <div class="entry-content">
-        <h3>Writer at Large</h3>
-        <p>I'm a paragraph. Click here to add your own text...</p>
-      </div>
-    </div>
+    <!-- ===============================================
+     Ability
+     =================================================== -->
+    <section class="ability-wrapper">
+      <section class="ability">
+        <h1>Ability</h1>
 
-    <div class="entry">
-      <span class="year">2035 - 2035</span>
-      <div class="entry-content">
-        <h3>Intern</h3>
-        <p>I'm a paragraph. Click here to add your own text...</p>
+        <!-- Ability 01 -->
+        <div class="ability-item">
+          <div class="ability-text">
+            <h2>Ability Name 01</h2>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. It's
+              easy. Just click "Edit Text" or double click me to add your own
+              content and make changes to the font.
+            </p>
+          </div>
+
+          <img src="images/ability1.jpg" alt="Ability 01" />
+        </div>
+
+        <!-- Ability 02 : 사진 → 텍스트 -->
+        <div class="ability-item">
+          <img src="images/ability2.jpg" alt="Ability 02" />
+
+          <div class="ability-text">
+            <h2>Ability Name 02</h2>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. It's
+              easy. Just click "Edit Text" or double click me to add your own
+              content and make changes to the font.
+            </p>
+          </div>
+        </div>
+
+        <!-- Ability 03 -->
+        <div class="ability-item">
+          <div class="ability-text">
+            <h2>Ability Name 03</h2>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. It's
+              easy. Just click "Edit Text" or double click me to add your own
+              content and make changes to the font.
+            </p>
+          </div>
+
+          <img src="images/ability3.jpg" alt="Ability 03" />
+        </div>
+
+        <!-- Ability 04 : 사진 → 텍스트 -->
+        <div class="ability-item">
+          <img src="images/ability4.jpg" alt="Ability 04" />
+
+          <div class="ability-text">
+            <h2>Ability Name 04</h2>
+            <p>
+              I'm a paragraph. Click here to add your own text and edit me. It's
+              easy. Just click "Edit Text" or double click me to add your own
+              content and make changes to the font.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ===============================================
+     contact
+     =================================================== -->
+    <section class="contact">
+      <!-- 왼쪽 사진 -->
+      <div class="contact-image">
+        <img src="images/contact.jpg" alt="Contact" />
       </div>
-    </div>
-  </div>
-</body>
+
+      <!-- 오른쪽 Contact Me -->
+      <div class="contact-box">
+        <h1>Let's work together</h1>
+
+        <p>
+          Feel free to contact me.<br />
+          I'd love to hear from you.
+        </p>
+
+        <form>
+          <label for="name">Name *</label>
+          <input type="text" id="name" placeholder="Enter your name" />
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+
+          <label for="message">Message *</label>
+          <textarea id="message" placeholder="Write your message"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===============================================
+     footer
+     =================================================== -->
+    <footer>
+      <hr />
+
+      <div class="footer-content">
+        <!-- 왼쪽 -->
+        <div class="footer-left">
+          <p>© 2026 Youngju Jo</p>
+        </div>
+
+        <!-- 가운데 -->
+        <div class="footer-center">
+          <p>Thank you for visiting.</p>
+        </div>
+
+        <!-- 오른쪽 -->
+        <div class="footer-right">
+          <a href="#">Instagram</a>
+          <a href="#">GitHub</a>
+          <a href="#">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
