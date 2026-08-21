@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,7 +11,22 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- 구글 changa 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 구글 jua 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Jua&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header>
       <div class="logo">
@@ -22,9 +36,9 @@
       </div>
 
       <nav class="nav">
-        <a href="resume.html">Resume</a>
-        <a href="project.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="#resume">Resume</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
 
       <div class="login">
@@ -54,7 +68,7 @@
         </p>
 
         <div class="slogan-button">
-          <span>Explore More</span>
+          <a href="https://zo0zoo.tistory.com/">Explore More</a>
         </div>
       </section>
     </main>
@@ -62,7 +76,7 @@
     <!-- ===============================================
      resume
      =================================================== -->
-    <section class="resume">
+    <section class="resume" id="resume">
       <div class="resume-1">
         <h1 class="resume-title">Resume</h1>
         <div class="resume-subtitle">
@@ -72,35 +86,58 @@
 
       <div class="entries">
         <div class="entry">
-          <span class="year"> 2035 - Present </span>
+          <span class="year"> 2025 - 2026 </span>
           <div class="entry-content">
-            <h3>Editor</h3>
-            <p>I'm a paragraph. Click here to add your own text...</p>
+            <h3>살롱인디앙 Salon Indien</h3>
+            <p>
+              1895년 파리의 'Salon Indien du Grand Cafe' 세계 최초의 영화관을
+              <br />
+              컨셉으로한 사진 스튜디오입니다. 영화 속에서 놀 듯이 촬영을
+              진행하고 <br />
+              즐거운 순간을 영화의 한 장면처럼 담고 영화 포스터로 제작해주는
+              스튜디오.
+            </p>
           </div>
         </div>
 
         <div class="entry">
-          <span class="year">2035 - 2035</span>
+          <span class="year">2023 - 2025</span>
           <div class="entry-content">
-            <h3>Writer at Large</h3>
-            <p>I'm a paragraph. Click here to add your own text...</p>
+            <h3>'그렇게 카페가 된다' - 공간 설계&시공</h3>
+            <p>
+              영화 연출, 무대설계, 소품설치 영화업계 사람들이 작은 빵집
+              공간디자인을 <br />
+              의뢰받은 프로젝트 '블랑제리코팡'이 망원동에서 대박이 났고 현재
+              10년간 공간디자인 <br />
+              사업을 하며 '요아정', '시장을 여는 사람들', '다락' 등 100개 이상의
+              공간을 제작했다. <br />
+              그 중에서 나는 '클라이밍파크', '뚝방길', '살롱인디앙' 등
+              프로젝트들을 진행했다.
+            </p>
           </div>
         </div>
 
         <div class="entry">
-          <span class="year">2035 - 2035</span>
+          <span class="year">2021 - 2022</span>
           <div class="entry-content">
-            <h3>Intern</h3>
-            <p>I'm a paragraph. Click here to add your own text...</p>
+            <h3>뜨끈한 밥상 - F&B 창업</h3>
+            <p>
+              뜨끈한 밥상은 마포구에 오픈했던 밥상 정기배송 서비스로<br />
+              울산시에 위치한 작은 시골마을 '웅촌' 할머니의 손맛을 가득한 담은
+              <br />
+              밥상을 청년이 머리에 이고 정기배송 해주는 컨셉의 반찬가게입니다.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ===============================================
-     Ability
+     project
      =================================================== -->
-    <section class="mybrand">
+    <section class="mybrand" id="project">
+      <h1 class="mybrand-title">My Project</h1>
+
       <button
         class="btn btn-primary"
         type="button"
@@ -136,7 +173,7 @@
     </section>
 
     <div id="brandAccordion" class="mybrand-content">
-      <!-- 1번 -->
+      <!-- 1번 뜨끈한밥상 -->
       <div
         class="collapse"
         id="collapseWidthExample1"
@@ -148,6 +185,13 @@
               <div class="carousel-item active">
                 <img
                   src="./images/뜨끈한밥상_3.jpg"
+                  class="d-block w-100"
+                  alt="뜨끈한밥상 이미지"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/뜨끈한밥상_로고.jpg"
                   class="d-block w-100"
                   alt="뜨끈한밥상 이미지"
                 />
@@ -224,6 +268,13 @@
               </div>
               <div class="carousel-item">
                 <img
+                  src="./images/살롱인디앙_3.jpg"
+                  class="d-block w-100"
+                  alt="살롱인디앙 이미지"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
                   src="./images/살롱인디앙_로고.png"
                   class="d-block w-100"
                   alt="살롱인디앙 이미지"
@@ -264,7 +315,61 @@
         id="collapseWidthExample3"
         data-bs-parent="#brandAccordion"
       >
-        <div class="card card-body">준비중</div>
+        <div class="card card-body">
+          <div
+            id="carouselClimbing"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/뚝방길.png"
+                  class="d-block w-100"
+                  alt="살롱인디앙 이미지"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/샤브토랑.png"
+                  class="d-block w-100"
+                  alt="살롱인디앙 이미지"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/클라이밍파크.png"
+                  class="d-block w-100"
+                  alt="살롱인디앙 이미지"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselClimbing"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselClimbing"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -278,11 +383,12 @@
         <!-- Ability 01 -->
         <div class="ability-item">
           <div class="ability-text">
-            <h2>Ability Name 01</h2>
+            <h2>디자인</h2>
             <p>
-              I'm a paragraph. Click here to add your own text and edit me. It's
-              easy. Just click "Edit Text" or double click me to add your own
-              content and make changes to the font.
+              처음에는 그저 예쁜 것이 좋다는 단순한 마음에서 시작했습니다.
+              하지만 내가 만든 것들을 사람들이 좋아하고, 즐길 수 있으면
+              좋겠습니다. 그리고 제 디자인이 누군가의 기억에 남는 결과물이
+              되기를 바랍니다.
             </p>
           </div>
 
@@ -291,14 +397,14 @@
 
         <!-- Ability 02 : 사진 → 텍스트 -->
         <div class="ability-item">
-          <img src="images/ability2.jpg" alt="Ability 02" />
+          <img src="./images/ability2.jpg" alt="Ability 02" />
 
           <div class="ability-text">
-            <h2>Ability Name 02</h2>
+            <h2>기획</h2>
             <p>
-              I'm a paragraph. Click here to add your own text and edit me. It's
-              easy. Just click "Edit Text" or double click me to add your own
-              content and make changes to the font.
+              사람들은 어떤 것을 좋아할까? 어떻게 해야 사람들의 마음을 움직일 수
+              있을까? 사람들의 마음을 이해하고, 마음을 움직이는 방법을 고민하고
+              기획하고 싶습니다.
             </p>
           </div>
         </div>
@@ -306,11 +412,11 @@
         <!-- Ability 03 -->
         <div class="ability-item">
           <div class="ability-text">
-            <h2>Ability Name 03</h2>
+            <h2>영상제작</h2>
             <p>
-              I'm a paragraph. Click here to add your own text and edit me. It's
-              easy. Just click "Edit Text" or double click me to add your own
-              content and make changes to the font.
+              영상은 최근 사람들에게 다가갈 수 있는 가장 강력한 도구라고
+              생각합니다. 사람들이 즐거울 수 있는 제 이야기, 생각들을 잘
+              전달하고 싶습니다.
             </p>
           </div>
 
@@ -319,14 +425,14 @@
 
         <!-- Ability 04 : 사진 → 텍스트 -->
         <div class="ability-item">
-          <img src="images/ability4.jpg" alt="Ability 04" />
+          <img src="images/ability4.gif" alt="Ability 04" />
 
           <div class="ability-text">
-            <h2>Ability Name 04</h2>
+            <h2>AI & 자동화</h2>
             <p>
-              I'm a paragraph. Click here to add your own text and edit me. It's
-              easy. Just click "Edit Text" or double click me to add your own
-              content and make changes to the font.
+              창업을 경험하면서 두가지를 느꼈습니다. 빠르게 실현하지 않으면
+              아이디어는 사라진다. 효율적으로 운영하지 않으면 길게 갈 수 없다.
+              AI를 통해 제 생각을 빠르게 실현하고 효율적으로 운영하고싶습니다.
             </p>
           </div>
         </div>
@@ -336,7 +442,7 @@
     <!-- ===============================================
      contact
      =================================================== -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <!-- 왼쪽 사진 -->
       <div class="contact-image">
         <img src="images/contact.jpg" alt="Contact" />
@@ -344,7 +450,7 @@
 
       <!-- 오른쪽 Contact Me -->
       <div class="contact-box">
-        <h1>Let's work together</h1>
+        <h1 class="contact-title">Let's work together</h1>
 
         <p>
           Feel free to contact me.<br />
